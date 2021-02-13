@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 外部样式：需要单独创建.css文件，使用link标签引入 -->
+    <link rel="stylesheet" href="style.css">
+    <style>
+        h1{
+            color: blueviolet;
+            font-size: 60px;
+            font-style: italic;
+        }
+        /* 内部样式：将CSS写在style标签中 */
+        p{
+            color: chartreuse;
+            font-size: 80px;
+        }
+        #么么哒 {
+            background-color: chocolate; 
+        }
+    </style>
+</head>
+<body>
+    <h1>今天也要光芒万丈呀！</h1>
+    <h1 id="么么哒">这是一个标题</h1>
+    <!-- 内联样式：直接将CSS语法写在标签的style的属性中 -->
+    <h2 style="color:pink";font-size55px;>美好的一天又开始了</h2>
+    <p>今天的不开心就此与止吧</p>
+    <div>这是一个div</div>
+    <script>
+        document.getElementById('么么哒').style="background=yellow"
+    </script>
+    
+</body>
+</html>
+<!-- 以上三种样式如果有重复的，优先级高的会覆盖优先级低的，可以使用important来强制改变默认优先级顺序 -->
+<!-- 这三种编写位置的优先级原则，内联大于内部和外部，但是内部和外部的优先级取决于代码的执行顺序，后执行的会覆盖先执行的。 -->

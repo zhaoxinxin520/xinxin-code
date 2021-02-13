@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 200px;
+            height: 200px;
+            display: inline-block;
+           /* display: inline-block; 显示行内元素*/
+        }
+        #a{
+            background: #ff0000;
+        }
+        #b{
+            background: #00ff00;
+            /* position: relative; */
+            /* position: relative;是相对定位 */
+            /* 元素定位之后可以设置四个值：left，top,right,bottom */
+            top: 30px;
+            left: 30px;
+            position: absolute;
+            /* position:absolute是绝对定位 */
+
+        }
+        #c{
+            background: #0000ff;
+        }
+        #outer{
+            width: 800px;
+            height: 500px;
+            background: #cccccc;
+            position: relative;
+            left: 10px;
+            top: 50px;
+            /* margin-top: 50px;
+            margin-left: 50px; */
+        }
+    </style>
+</head>
+<body>
+    <div id="outer">
+    <div id="a"></div>
+    <div id="b"></div>
+    <div id="c"></div>
+    </div>
+   
+</body>
+</html>

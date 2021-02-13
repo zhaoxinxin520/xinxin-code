@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>水平导航菜单栏</title>
+    <style>
+        * {
+            /* *※是通配符 */
+            margin: 0;
+            padding: 0;
+        }
+        ul {
+            list-style: none;
+            /* list-style: none;样式重置 */
+        }
+        
+         #menu {
+             overflow: hidden;
+         }   /* height: 30px; */ 
+         /*  overflow: hidden;溢出隐藏 打开一个新的空间 */
+
+        
+        a {
+            list-style: none;
+        }
+        
+        
+       #menu li{
+           background-color: #addf25;
+          /* display: inline-block;块行元素 */
+           /* inline-block会产生不必要空格，另外在ie6中不支持 */
+            /* display: inline-block; */
+            float: left;
+            width: 120px;
+            height: 30px;
+            margin-right: 2px;
+            
+       }
+       #menu li a{
+        color: #ffffff;
+        display: block;
+        width: 100%;
+        height: 100%;
+        text-indent: 10px;
+       line-height: 30px;
+       /* line-height:是行高 ; */
+       /* text-indent 文本缩进*/
+      
+       }
+       #menu li a:hover{
+           background: #00ffff;
+
+       }
+       .clearfix::after{
+            content: "";
+            display: block;
+            clear: both;
+            /* clearfix清除浮动 */
+       }
+    </style>
+</head>
+<body>
+    <ul id="menu">
+        <li>
+            <a href="#">link 1</a>
+        </li>
+        <li><a href="#">link 2</a></li>
+        <li><a href="#">link 3</a></li>
+        <li><a href="#">link 4</a></li>
+        <!-- ul#menu>li#4>a{link $}简写 #号是占位符 -->
+    </ul>
+     <h1>我的小可爱</h1>
+</body>
+</html> 

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML布局</title>
+    <style>
+        #container{
+            width: 400px;
+            height: 300px;
+            border: 1px solid black;    
+            /* border是边框的意思 solid是实线的意思 */
+            }
+         #header{
+             border:1px solid black;
+            height: 40px;
+         } 
+         #sidebar {
+             border:1px solid black;
+             height: 258px;
+             width: 30%;
+             float: left;
+             /* float是浮动的意思float浮动布局 */
+             
+         }
+         #content{
+             
+             width: 69%;
+             border :1px solid black;
+             height: 258px;
+             float: left;
+
+         }
+
+    </style>
+</head>
+<body>
+    <!-- table是表格 tr：table row是表格的行  td:table data是表格的列-->
+    <table>
+        <tr>
+
+        </tr>
+
+    </table>
+    <!-- div布局 div布局 div布局c-->
+    <!-- 快捷方式div#加值如content 这样 -->
+    <div id="container"> <!--container是容器的意思-->
+        <div id="header">header</div>
+        <div id="sidebar">sidebar</div> <!--sidebar是侧边栏的意思-->
+        <siv id="content">content</siv> <!--content是内容的意思-->
+
+    </div>
+    <ul>
+        <li>111</li>
+        <li>222</li>
+        <li>333</li>
+    </ul>
+</body>
+</html>

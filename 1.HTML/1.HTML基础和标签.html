@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML标签</title>
+    <style>
+        a,b,span{
+            background:red;
+            width: 300px;
+            height: 200px;
+        }
+         h1,h2,p,div{
+             background: chartreuse;
+             width: 60%;
+            
+             /* width:auto ;  */
+             /* auto是boby的值，auto是自动的意思 */
+             /* width: 400px;
+             height: 300px; */
+            
+    
+             /* width: 400px;
+             height: 300px; */
+         }
+
+    </style>
+</head>
+<body> <!--以下标签是行元素-->
+    a&gt;b <br>
+    <a href="http://www.baidu.com">百度</a>
+    <b>这是一个加粗标签</b>
+    <span>这是一个span</span> 
+    <strong>这是一个更强调标签</strong>
+    <em>这是一个强调标签</em>
+
+
+    <!-- <span>是一小段文本的意思 -->
+    <!--一下标签是块元素-->
+    <h1>这是一个标题</h1>
+    <h2>这是一个标题</h2>
+    <p>这是一个段落</p>
+    <div>这是一个区块</div>
+    <!-- ol是有序列表 -->
+    <ol>
+        <li>hahah 1</li>
+        <li>hahah 2</li>
+        <li>hahah 3</li>
+    </ol>
+    <!-- ul 是无序列表 -->
+    <ul>
+        <li>hehehe 1</li>
+        <li>hehehe 2</li>
+        <li>hehehe 3</li>
+    </ul>
+    <!-- 以下是表单元素 以下是表单元素 以下是表单元素-->
+
+    <!-- input属于输入元素 -->  
+    <!--type=“text”：单行文本框  是带有文字的-->
+    <input type="text">
+    
+    <!-- type=“password”：密码框 是带有。。。。点的-->
+    <input type= "password">
+    <!-- type=“radio”：单选框 是选择男女的 按name属性分组name=sex性别 按name相同的radio属性下分组-->
+    <input type="radio" name="sex">男
+    <input type="radio" name="sex">女
+    <!-- type=“Checkbox”：是复选框 -->
+    <input type="checkbox" name="hobby">唱歌
+    <input type="checkbox" name="hobby">跳舞
+    <input type="checkbox" name="hobby">弹琴
+   <!-- type="button" :这是一个按钮-->
+   <input type="button" value="按钮"> 
+   <button>按钮</button>  <!--强烈推荐用这个button-->
+   <!-- select下拉选择框  在它的内部使用option标签来表示一个选项  一个option就是一个选项-->
+   <!-- option属性里面有一个value值 -->
+   <select name="" id="">
+       <option value="neimenggu">内蒙古</option>
+       <option value="heilongjiang">黑龙江</option>
+       <option value="liaoning">辽宁</option>
+       <option value="shenzhen">深圳</option>
+   </select>
+   <select name="" id="">
+       <option value="">唱歌</option>
+       <option value="">跳舞</option>
+       <option value="">绘画</option>
+   </select>
+   <select name="countries" id="" size="5" multiple>
+       <option value="美国">美国</option>
+       <option value="日本">日本</option>
+       <option value="中国">中国</option>
+       <option value="英国">英国</option>
+       <option value="法国">法国</option>
+   </select>
+   <!-- textarea是多行文本框 -->
+   <textarea name="" id="" cols="30" rows="10"></textarea>
+
+
+</body>
+</html>

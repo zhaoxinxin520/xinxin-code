@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #flex-box{
+            width: 600px;
+            height: 500px;
+            background: #cccccc;
+            display: flex;
+            /* display:flex是将元素设置成flex的容器 */
+            /* display: inline;是行 */
+            /* display: block;是块 */
+            /* flex-box是大的flex container大的容器 */
+            /* 默认主轴main axin从左侧开始main start是起始点到右侧main end是终止点 */
+            /* 垂直的交叉轴cross start上面是起始点，下面cross end是终止点，但是主轴侧轴都是可以改的 */
+            /* 默认情况下主轴是向右的，侧轴是向下的 */
+            /* 每一个弹性项目的宽度叫做main size，高度叫做cross size 这个不是width和height */
+            /* 可以给每一个弹性项目flex-item手动设置宽和高但是最后的展示的值和设定的不一样所以不能叫做width和height */
+            /* 对于flex容器可以设置6个值 */
+            /* flex-direction用来设置主轴的方向 */
+            /* 1: row;默认值是row 表示主轴在水平方向起点在左端*/
+            flex-direction:row;
+            /* 2：row-reverse;表示主轴在水平方向起点在右面端*/
+            /* flex-direction: row-reverse; */
+            /* 3：column是列的意思，表示主轴在垂直方向，起点在上沿 */
+            /* flex-direction:column; */
+            /* 4:column -reverse表示主轴在垂直方向，起点在下沿 */
+            /* flex-direction:column-reverse */
+
+            /*  flex-wrap：弹性的换行 flex-wrap: wrap;用来flex项目换行，前提是能换行的情况下。 */
+            /* flex-wrop新属性，用来多个元素换行 */
+            /* 1：nowrap默认值，不换行 */
+            /* flex-wrap:nowrap */
+            /* 2：wrap,换行 */
+            /* flex-wrap: wrap; */
+            /* 3: wrap-reverse;反方向换行（取决于主轴的方向）*/
+            /* flex-wrap: wrap-reverse; */
+
+            /* flex-flow:是flex-direction:row和flex-wrap的复合写法 */
+            /* flex-flow: row wrap */
+
+
+            /* justify-content:是用来定义主轴flex项目上的对齐方式 */
+            /* 1:flex-start 左对齐; */
+            /* justify-content: flex-start; */
+            /* 2:flex-end :右对齐 */
+            /* justify-content: flex-end; */
+            /* 3:center 是居中对齐*/
+            /* justify-content:center; */
+            /* 4：space-between两端对齐; 项目之间的间隔都相等; 富裕空间在元素之间平均分配; */
+            /* justify-content: space-between; */
+            /* 5:space-around每个flex项目两侧的间隔相等; 每根轴线两侧的间隔都相等; 每个子元素两侧的间隔相等; */
+            /* justify-content: space-around; */
+            /* 6: space-evenly:每个flex项目的间隔都相等（均匀分布）*/
+            /* justify-content: space-evenly; */
+
+
+            /* align-items侧轴对齐方式 */
+            /* 1：flex-start:在交叉轴上的起点对齐 */
+            /* align-items: flex-start; */
+            /* 2：flex-end:在交叉轴的终点对齐 */
+            /* align-items: flex-end; */
+            /* 3：center：在交叉轴的中间对齐 */
+            /* align-items: center; */
+            /* 4:baseline: 基线的对齐方式（第一行文本的下沿对齐） */
+            /* align-items: baseline; */
+            /* 5：stretch:是默认值，拉伸 */
+            /* align-items: stretch; */
+
+
+            /*  align-content: 定义多跟主轴在交叉轴上的对齐方式*/
+            /* 1：flex-start：在交叉轴上的起点对齐*/
+            /* align-content: flex-start; */
+            /* 2：flex-end:在交叉轴的终点对齐 */
+            /* align-content: flex-end; */
+            /* 3:center:在交叉轴的中间对齐 */
+            /* align-content: center; */
+            /* align-content: center; */
+            
+            
+            
+        }
+        .flex-item{
+            width: 100px;
+            height: 100px;
+            /* flex-grow:用来定义flex项目的放大比例，如果有剩余空间的话 */
+            /* flex-grow:1 ; */
+            /* flex-shrink:用来定义flex项目的缩小比例，如果空间有负债的话 */
+            /* flex-shrink: 1; */
+            /* 有2个值，1是同比缩小。0是不缩小 */
+            /* flex-basis: 基准值; 定义了在分配多余空间之前; 初始基础值;; */
+            /* flex-basis: 100px; */
+            /* flex-basis优先级比width高 */
+
+           flex: 1,0,auto;
+        }
+        .item1{
+            background: rgb(230, 13, 13);
+           /* flex-basis: 100px; */
+            /* width: 300px; */ 
+            /* flex-basis:特性如果同时设置flex-basis和width，flex-basis优先级比width高 */
+            /* flex-basis并不是总是width */
+            /* 当flex-direction为row是，flex-basis设置的是width，当flex-direction为column，flex-basis设置的是height */
+        }
+        .item2{
+            background: rgb(8, 11, 214);
+            /* font-size: 30px;
+            height: 200px; */
+            /* flex-grow: 2; */
+            
+        }
+        .item3{
+            background: rgb(51, 166, 211);
+            flex-shrink: 2;
+        }
+        .item4{
+            background: rgb(212, 228, 74);
+        }
+        .item5{
+            background: rgb(95, 17, 184);
+        }
+        .item6{
+            background: rgb(41, 111, 133);
+           
+        }
+        .item7{
+            background: rgb(105, 116, 10);
+        }
+        .item8{
+            background: rgb(28, 221, 54);
+        }
+        .item9{
+            background: rgb(95, 12, 95);
+            order: -1;
+        }
+
+    </style>cross
+</head>
+<body>
+  <div id="flex-box">
+      <!-- flex-box是大的容器 -->
+      <!-- div.flex-item{item $}*6 -->
+      <!-- 里面的子元素div是小的flex-item是弹性项目 -->
+      <div class="flex-item item1">item 1g股上市公司归属感</div>
+      <div class="flex-item item2">item 2</div>
+      <div class="flex-item item3">item 3</div>
+      <div class="flex-item item4">item 4</div>
+      <div class="flex-item item5">item 5</div>
+      <div class="flex-item item6">item 6</div>
+      <div class="flex-item item7">item 7</div>
+      <div class="flex-item item8">item 8</div>
+      <div class="flex-item item9">item 9</div>
+  </div>
+   
+</body>
+</html>
