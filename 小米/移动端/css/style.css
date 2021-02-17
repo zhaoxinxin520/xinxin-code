@@ -1,7 +1,30 @@
-header{
-    height: 74px;
+.wrapper {
+    padding: 0 10px
+  }
+  header {
+    height: 1.48rem;
     background: #f2f2f2;
     
+  }
+  
+  header .search {
+    display: flex;
+    height: 0.88rem;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  header .search img.logo {
+    width: .5rem;
+    height: .32rem;
+  }
+  header .search input {
+    width: 5.4rem;
+   height:.66rem;
+  } 
+  header .search img.user{
+    width: .62rem;
+    height: .62rem;
+  }
+ 
 
-
-}
